@@ -4,209 +4,287 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- let's link to our stylesheet (found in public/css/styles.css)-->
-<link rel="stylesheet" type="text/css" href="/css/styles.css"> 
+<link rel="stylesheet" type="text/css" href="/css/styles.css">
 </head>
 
 <!-- you can also specify styles straight in html!-->
 <!-- let's make this page use comic sans and dark blue for the body text. -->
+
 <div style="font-family:'Comic Sans MS', 'Comic Sans', cursive; color:#0000aa;">
-    <div class="buttons">
-      <a id="0" href="/">
-        <button class="Back">Back</button>
-      </a>
+  <div class="back">
+    <a id="1" href="/">
+      <button class="Back">Back</button>
+    </a>
+  </div>
+</div>
+
+<div>
+    <h1 style="font-family:verdana;">My Profile</h1>
+    <div class="pic">
+      <img style="border:1px solid black; border-radius: 8px; position: relative; left: 5%;" src="/images/img.png" alt="Photo of Milford Sound in New Zealand" height="100px" width="100/>px">
     </div>
-      <a id="1" href="/b">
-        <button class="Trail1">Trail 1</button>
-      </a>
-      <a id="2" href="/c">
-        <button class="Compare1">Compare</button>
-      </a>
-      <a id="3" href="/b">
-        <button class="Trail2">Trail 2</button>
-      </a>
-      <a id="4" href="/c">
-        <button class="Compare2">Compare</button>
-      </a>
-      <a id="5" href="/b">
-        <button class="Trail3">Trail 3</button>
-      </a>
-      <a id="6" href="/c">
-        <button class="Compare3">Compare</button>
-      </a>
-      <a id="7" href="/b">
-        <button class="Trail4">Trail 4</button>
-      </a>
-      <a id="8" href="/c">
-        <button class="Compare4">Compare</button>
-      </a>
-      <a id="9" href="/b">
-        <button class="Trail5">Trail 5</button>
-      </a>
-      <a id="10" href="/c">
-        <button class="Compare5">Compare</button>
-      </a>
-      <a id="11" href="/b">
-        <button class="Trail6">Trail 6</button>
-      </a>
-      <a id="12" href="/c">
-        <button class="Compare6">Compare</button>
-      </a>
-      <a id="13" href="/b">
-        <button class="Trail7">Trail 7</button>
-      </a>
-      <a id="14" href="/c">
-        <button class="Compare7">Compare</button>
-      </a>
-      <a id="15" href="/b">
-        <button class="Trail8">Trail 8</button>
-      </a>
-      <a id="16" href="/c">
-        <button class="Compare8">Compare</button>
-      </a>
-      <a id="16" href="/b">
-        <button class="Trail9">Trail 9</button>
-      </a>
-      <a id="17" href="/c">
-        <button class="Compare9">Compare</button>
-      </a>
-      <a id="17" href="/b">
-        <button class="Trail10">Trail 10</button>
-      </a>
-      <a id="18" href="/c">
-        <button class="Compare10">Compare</button>
-      </a>
-      <a id="19" href="/b">
-        <button class="Trail11">Trail 11</button>
-      </a>
-      <a id="20" href="/c">
-        <button class="Compare11">Compare</button>
-      </a>
+    <div class="txt">
+      change a photo
+    </div>
+    <div class="txt1">
+      Name
+    </div>
+    <div class="txt2">
+      Amy Wang
+    </div>
+    <div class="txt3">
+      Gender
+    </div>
+    <div class="txt4">
+      Female
+    </div>
+    <div class="txt5">
+      Details
+    </div>
+    <div class="txt6">
+      App name ID
+    </div>
+    <div class="txt7">
+      Aaaaaamy
+    </div>
+    <div class="line1"></div>
+    <div class="txt8">
+      Timezone
+    </div>
+    <div class="txt9">
+      PDT
+    </div>
+    <div class="line2"></div>
+    <div class="txt10">
+      Current Time
+    </div>
+    <div class="txt11">
+      8:19 PM
+    </div>
+    <div class="line3"></div>
+    <div class="txt12">
+      What's up
+    </div>
+    <div class="txt13">
+      California time
+    </div>
+    <div class="line4"></div>
   </div>
 
-  <div>
-    <div class="buttons">
-      <a id="1" href="/">
-        <button class="button1">Home</button>
-      </a>
-      <a id="2" href="/d">
-        <button class="button2">Favorites</button>
-      </a>
-      <a id="3" href="/a">
-        <button class="button3">Trails</button>
-      </a>
-    </div>
+
+  <div class="buttons">
+    <a id="1" href="/b">
+      <button class="button1"></button>
+      <span class="img1">
+        <img src="/images/friends.png" height="40px" width="40px">
+      </span>
+      <div class="txtfr">
+        Friends
+      </div>
+    </a>
+    <a id="2" href="/a">
+      <button class="button2"></button>
+      <span class="img2">
+        <img src="/images/profile.png" height="40px" width="40px">
+      </span>
+      <div class="txtpr">
+        Profile
+      </div>
+    </a>
+  </div>
+
 
 <style>
-  .trail1{
-    text-align: center;
+.back{
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  left: 2%;
+  top: 0.3%;
+}
+.txt{
+  color: blue;
+  font-size: 10px;
+  position: relative;
+  left: 7%;
+}
+.txt1{
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+}
+
+.txt2{
+  color: black;
+  font-size: 13px;
+  position: absolute;
+  left: 50%;
+  top: 12%;
+}
+.txt3{
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  top: 15%;
+}
+.txt4{
+  color: black;
+  font-size: 13px;
+  position: absolute;
+  left: 50%;
+  top: 17%;
+}
+
+.txt5{
+  color: #00003B;
+  font-size: 15px;
+  position: relative;
+  left: 5%;
+  top: 10px;
+}
+
+.txt6{
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  left: 5%;
+  top: 27%;
+}
+.txt7{
+  color: black;
+  font-size: 13px;
+  position: absolute;
+  left: 5%;
+  top: 30%;
+}
+  .line1{
+    border-bottom: 1px solid black;
+    margin-top: 5px;
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    top: 32%;
   }
-  .Back{
-    height:30px;
-    width:125px;
+  .txt8{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    left: 5%;
+    top: 35%;
   }
-  .Trail1{
-    height:60px;
-    width:196px;
+  .txt9{
+    color: black;
+    font-size: 13px;
+    position: absolute;
+    left: 5%;
+    top: 38%;
   }
-  .Compare1{
-    height:60px;
-    width:196px;
+  .line2{
+    border-bottom: 1px solid black;
+    margin-top: 5px;
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    top: 40%;
   }
-  .Trail2{
-    height:60px;
-    width:196px;
+  .txt10{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    left: 5%;
+    top: 43%;
   }
-  .Compare2{
-    height:60px;
-    width:196px;
+  .txt11{
+    color: black;
+    font-size: 13px;
+    position: absolute;
+    left: 5%;
+    top: 46%;
   }
-  .Trail3{
-    height:60px;
-    width:196px;
+  .line3{
+    border-bottom: 1px solid black;
+    margin-top: 5px;
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    top: 48%;
   }
-  .Compare3{
-    height:60px;
-    width:196px;
+  .txt12{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    left: 5%;
+    top: 51%;
   }
-  .Trail4{
-    height:60px;
-    width:196px;
+  .txt13{
+    color: black;
+    font-size: 13px;
+    position: absolute;
+    left: 5%;
+    top: 54%;
   }
-  .Compare4{
-    height:60px;
-    width:196px;
-  }
-  .Trail5{
-    height:60px;
-    width:196px;
-  }
-  .Compare5{
-    height:60px;
-    width:196px;
-  }
-  .Trail6{
-    height:60px;
-    width:196px;
-  }
-  .Compare6{
-    height:60px;
-    width:196px;
-  }
-  .Trail7{
-    height:60px;
-    width:196px;
-  }
-  .Compare7{
-    height:60px;
-    width:196px;
-  }
-  .Trail8{
-    height:60px;
-    width:196px;
-  }
-  .Compare8{
-    height:60px;
-    width:196px;
-  }
-  .Trail9{
-    height:60px;
-    width:196px;
-  }
-  .Compare9{
-    height:60px;
-    width:196px;
-  }
-  .Trail10{
-    height:60px;
-    width:196px;
-  }
-  .Compare10{
-    height:60px;
-    width:196px;
-  }
-  .Trail11{
-    height:50px;
-    width:196px;
-  }
-  .Compare11{
-    height:50px;
-    width:196px;
+  .line4{
+    border-bottom: 1px solid black;
+    margin-top: 5px;
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    top: 56%;
   }
   .button1{
-    height:30px;
-    width:128px;
+    height:60px;
+    width:187px;
+    position: absolute;
+    left: 5%;
+    top: 77%;
   }
   .button2{
-    height:30px;
-    width:128px;
+    height:60px;
+    width:187px;
+    position: absolute;
+    left: 50%;
+    top: 77%;
   }
-  .button3{
-    height:30px;
-    width:128px;
+  .img1{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 24%;
+    top: 77%;
+  }
+  .txtfr{
+    color: black;
+    font-size: 13px;
+    position: absolute;
+    left: 23%;
+    top: 81%;
+  }
+  .img2{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 66%;
+    top: 77.5%;
+  }
+  .txtpr{
+    color: black;
+    font-size: 13px;
+    position: absolute;
+    left: 66%;
+    top: 81%;
   }
 </style>
 
 
 </body>
 </html>
-
