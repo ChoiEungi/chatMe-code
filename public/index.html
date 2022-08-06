@@ -7,30 +7,100 @@
 </head>
 
 <!-- you can also specify styles straight in html! Let's use Verdana on this page.-->
-<body style="font-family:Verdana;">
-<div style="background-color:#e5e5e5;padding:15px;text-align:center;">
-  <h1>Hello World</h1>
-</div>
 
-<div style="overflow:auto">
-  <div class="menu">
-    <a href="/a">Normal Rabbit</a>
-    <a href="/b">Gray Rabbit</a>
-    <a href="/c">Sepia Rabbit</a>
+  <div style="background-color:#c4dd33;padding:15px;text-align:left;">
+    <form>
+      <input type="search" placeholder="Search..." size="43">
+    </form>
+    <div class="search">
+      <a id="0" href="/a">
+        <div style = "position:absolute; left:330px; top:23px;">
+          <button>Search</button>
+        </div>
+      </a>
+    </div>
+    <div style = "position:relative; left:130px; top:0px;">
+      Nearby Trails
+    </div>
+  </div>
+  
+  <div class="container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Grizzly_Bench.jpg" alt="Snow" height="187px" width="398px">
+    <div class="top-left"><br>Berkeley <br><br>Hills <br><br>Trail</div>
+    <div class="top-right"><br>Difficulty: 5 <br><br> Distance: 10Km <br><br>
+    Elevation: 50ft</div>
   </div>
 
-  <div class="main">
-    <h2>Why are these colors so ugly?</h2>
-    <p>Sure makes you feel motivated to pick a better color-scheme for yourself instead of sticking with these ugly default colors, huh? >:)</p>
+  <div class="container">
+    <img src="https://s.hdnux.com/photos/01/23/12/10/21799437/3/1200x0.jpg" alt="Snow" height="187px" width="398px">
+    <div class="top-left"><br>Oakland <br><br>Hills <br><br>Trail</div>
+    <div class="top-right"><br>Difficulty: 4 <br><br> Distance: 5Km <br><br>
+    Elevation: 60ft</div>
   </div>
-
-  <div class="right">
-    <h2>About</h2>
-    <p>This is some example code prepared for CS160: User Interface Design & Development, Summer 2022.</p>
+  
+    <div class="right">
+      <h2>About</h2>
+      <p>This is a cool application focused towards sightseers new in town
+        trying to exploe the city! What are you waiting for? Explore the city!!</p>
+    </div>
   </div>
-</div>
-
+  
+  <div>
+    <div class="buttons">
+      <a id="1" href="/">
+        <button class="button1">Home</button>
+      </a>
+      <a id="2" href="/d">
+        <button class="button2">Favorites</button>
+      </a>
+      <a id="3" href="/a">
+        <button class="button3">Trails</button>
+      </a>
+    </div>
+  </div>
+</body>
 
 </body>
+<style>
+  .search{
+    height:10px;
+    width:10px;
+  }
+  .button1{
+    height:30px;
+    width:125px;
+  }
+  .button2{
+    height:30px;
+    width:125px;
+  }
+  .button3{
+    height:30px;
+    width:125px;
+  }
+  .container {
+  position: relative;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+</style>
+
+<script>
+
+</script>
 </html>
+
 

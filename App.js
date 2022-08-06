@@ -44,6 +44,12 @@ app.get('/b', function (req, res) {
 app.get('/c', function (req, res) {
     res.sendFile(publicPath + '/c.html');
 });
+app.get('/d', function (req, res) {
+    res.sendFile(publicPath + '/d.html');
+});
+app.get('/t', function (req, res) {
+    res.sendFile(publicPath + '/t.html');
+});
 
 
 //run this server by entering "node App.js" using your command line. 
