@@ -199,7 +199,9 @@
             + '</div><div class="text">' + arguments[0]
             + '</div></div><div class="button" id="delay-btn">Delay</div>' +
             '<div class="button" id="save-btn">Save</div>' +
-            '<div class="button" id="discard-btn">Discard</div></div>';
+            '<div class="button" id="discard-btn">Discard</div>' +
+            '<div class="button" id="back-btn">Back</div></div>';
+
         document.querySelector('body').appendChild($alert);
         myBlurFunction(1);
         setTimeout(function () {
@@ -227,6 +229,11 @@
             document.querySelector('#discard-btn').addEventListener("click", function () {
                 document.getElementById("chatsend").value = "";
                 myBlurFunction(0);
+                $alert.parentElement.removeChild($alert);
+            });
+
+            document.querySelector('#back-btn').addEventListener("click", function () {
+                lateAlarm("", "chatMe: Too Late!");
                 $alert.parentElement.removeChild($alert);
             });
         });
