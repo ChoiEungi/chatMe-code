@@ -138,7 +138,7 @@
   color: #333333;
 }
 .chat-body .answer .time {
-  font-size: 16px;
+  font-size: 10px;
   line-height: 36px;
   position: relative;
   padding-bottom: 1px;
@@ -159,6 +159,7 @@
   color: #ffffff;
   border-radius: 8px 8px 0 8px;
 }
+
 .chat-body .answer.right .text:before {
   right: -30px;
   border-left-color: #448af7;
@@ -168,6 +169,34 @@
   padding-right: 12px;
   color: #333333;
 }
+
+#delay-text {
+  background: #CDE1FF;
+  color: #448AF7;
+  border-radius: 8px 8px 0 8px;
+}
+
+#delay-text:before {
+  right: -30px;
+  border-left-color: #CDE1FF;
+  border-left-width: 12px;
+}
+
+.scheduled-box {
+  display: block;
+  background: #FF9500;
+  color: #ffffff;
+  border-radius: 10px;
+  font-size:12px;
+  width: 160px;
+  height: 20px;
+  position: relative;
+  margin-left: 150px;
+  margin-top:8px;
+  text-align: center;
+  padding-bottom: 1px;
+}
+
 
 /**************ADD FORM ***************/
 .chat input {
