@@ -12,7 +12,7 @@
 <!-- let's make this page use comic sans and dark blue for the body text. -->
 <div style="font-family:'Comic Sans MS', 'Comic Sans', cursive; color:#0000aa;">
   <div class="back">
-    <a id="1" href="/">
+    <a id="1" href="/a">
       <button class="Back">Back</button>
     </a>
   </div>
@@ -20,14 +20,55 @@
 
 <div class="search">
   <form>
-    <input type="search" placeholder="    Search for a friend" size="46">
+    <input type="search" placeholder="Search for a friend" size="47" height="30px" width="20px">
   </form>
   <span class="imgsr">
     <img src="/images/search.png" height="23px" width="23px">
   </span>
 </div>
 
+<div>
+    <div class="txt1">
+      My Profile
+    </div>
+    <div class="pic1">
+      <img style="border:1px solid black; border-radius: 8px; position: relative; left: 5%;" src="/images/img.png" height="70px" width="57px">
+    </div>
+    <div class="txt2">
+      Amy Wang
+    </div>
+    <div class="txt3">
+      California time
+    </div>
+    <div class="line1"></div>
+    <div class="txt4">
+      Friends
+    </div>
+  </div>
+
 <div class="buttons">
+  <a id="1" href="/c">
+    <button class="friend1">
+    <span class="friend1img">
+      <img style="border:1px solid black; border-radius: 8px; position: absolute; left: 8%; top: -14px;" src="/images/james.png" height="70px" width="57px">
+    </span>
+    <div class="txtfr1">
+      James Huang
+    </div>
+    </button>
+  </a>
+
+  <a id="1" href="/d">
+    <button class="friend2">
+    <span class="friend2img">
+      <img style="border:1px solid black; border-radius: 8px; position: absolute; left: 8%; top: -14px;" src="/images/jasmine.png" height="70px" width="57px">
+    </span>
+    <div class="txtfr2">
+      Jasmine Kim
+    </div>
+    </button>
+  </a>
+
   <a id="1" href="/b">
     <button class="button1"></button>
     <span class="img1">
@@ -37,6 +78,7 @@
       Friends
     </div>
   </a>
+
   <a id="2" href="/a">
     <button class="button2"></button>
     <span class="img2">
@@ -67,55 +109,157 @@
   top: 2%;
 }
 
+.txt1{
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  left: 7%;
+  top: 10%;
+}
+
+.txt2{
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  left: 30%;
+  top: 15%;
+}
+
+.txt3{
+  color: black;
+  font-size: 13px;
+  position: absolute;
+  left: 30%;
+  top: 17.7%;
+}
+
+.pic1{
+  position: absolute;
+  left: 9%;
+  top: 13.5%;
+}
+
+.line1{
+  border-bottom: 1px solid black;
+  margin-top: 5px;
+  width: 90%;
+  position: absolute;
+  left: 5%;
+  top: 22%;
+}
+
+.txt4{
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  left: 7%;
+  top: 25%;
+}
+
+.friend1{
+  height:100px;
+  width:370px;
+  border-radius: 25px;
+  position: absolute;
+  left: 5%;
+  top: 30%;
+}
+
+.friend1img{
+  height:85px;
+  width:100px;
+  position: absolute;
+  left: 5%;
+  top: 30%;
+}
+
+.txtfr1{
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  left: 30%;
+  top: 37%;
+}
+
+.friend2{
+  height:100px;
+  width:370px;
+  border-radius: 25px;
+  position: absolute;
+  left: 5%;
+  top: 45%;
+}
+
+.friend2img{
+  height:85px;
+  width:100px;
+  position: absolute;
+  left: 5%;
+  top: 30%;
+}
+
+.txtfr2{
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  left: 30%;
+  top: 37%;
+}
+
 .button1{
   height:60px;
   width:187px;
   position: absolute;
   left: 5%;
-  top: 77%;
+  top: 93%;
 }
 .button2{
   height:60px;
   width:187px;
   position: absolute;
   left: 50%;
-  top: 77%;
+  top: 93%;
 }
 .img1{
   height: 40px;
   width: 40px;
   position: absolute;
   left: 24%;
-  top: 77%;
+  top: 93%;
 }
 .txtfr{
   color: black;
   font-size: 13px;
   position: absolute;
   left: 23%;
-  top: 81%;
+  top: 97%;
 }
 .img2{
   height: 40px;
   width: 40px;
   position: absolute;
   left: 66%;
-  top: 77.5%;
-}
-.txtpr{
-  color: black;
-  font-size: 13px;
-  position: absolute;
-  left: 66%;
-  top: 81%;
+  top: 93.5%;
 }
 
 .imgsr{
   height: 25px;
   width: 25px;
   position: absolute;
-  left: 3.8%;
+  left: 88%;
   top: 29%;
 }
 
+.txtpr{
+  color: black;
+  font-size: 13px;
+  position: absolute;
+  left: 66%;
+  top: 97%;
+}
 <style>
