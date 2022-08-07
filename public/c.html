@@ -108,27 +108,22 @@
         </div>
       </div>
     </div>
-
     <script type="text/javascript">
-      $(function () {
-        var msg;
-        $(".chat").niceScroll();
+        $(function () {
+            $(".chat").niceScroll();
 
-        $("input#chatsend").keypress(function (e) {
-          msg = $("input#chatsend").val();
-        });
-
-        $(".send-button").on("click", function () {
-          $(".chat-body").append(
-            `<div class="answer right">
+            $(".send-button").on("click", function () {
+                $(".chat-body").append(
+                    `<div class="answer right">
                 <div class="text">
-                  ${msg}
+                  ${$("input#chatsend").val()}
                 </div>
                 <div class="time">5 min ago</div>
               </div>`
-          );
+                );
+                document.getElementById("chatsend").value = "";
+            });
         });
-      });
     </script>
   </body>
 </html>
