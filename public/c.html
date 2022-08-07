@@ -122,6 +122,7 @@
               </div>`
                 );
                 document.getElementById("chatsend").value = "";
+                $('.chat-body').scrollTop($('.chat-body').get(0).scrollHeight, -1);
             });
         });
     </script>
