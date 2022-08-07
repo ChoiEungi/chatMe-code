@@ -51,7 +51,7 @@ app.get('/t', function (req, res) {
     res.sendFile(publicPath + '/t.html');
 });
 app.get('/r', function (req, res) {
-    res.sendFile(publicPath + '/t.html');
+    res.sendFile(publicPath + '/r.html');
 });
 
 
