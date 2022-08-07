@@ -206,3 +206,91 @@
   -webkit-appearance: none;
   border-radius: 0;
 }
+
+/* alert css */
+
+.alert * {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -ms-touch-action: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.alert *:focus {
+  outline: 0
+}
+
+.alert {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -135px;
+  margin-top: -50px;
+  width: 270px;
+  text-align: center;
+  font-family: -apple-system, SF UI Text, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  border-radius: 13px;
+  overflow: hidden;
+  z-index: 9999999999999999999999998;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.alert .inner {
+  padding: 15px;
+}
+
+.alert .title {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.alert .text {
+  margin-top: 5px;
+}
+
+.alert .button {
+  position: relative;
+  height: 44px;
+  line-height: 44px;
+  font-size: 17px;
+  color: #007aff;
+  border-radius: 0 0 13px 13px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.alert .button:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 1px;
+  width: 100%;
+  display: block;
+  background-color: #c4c4c4;
+  z-index: 9999999999999999999999999;
+}
+
+.blur   {
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+}
+
+#overlay    {
+  position: fixed;
+  display: none;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: rgba(255,255,255,.8);
+  z-index: 999;
+}

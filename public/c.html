@@ -109,6 +109,8 @@
       </div>
     </div>
     <script type="text/javascript">
+        var isBlur = false;
+
         $(function () {
             $(".chat").niceScroll();
 
@@ -123,8 +125,45 @@
                 );
                 document.getElementById("chatsend").value = "";
                 $('.chat-body').scrollTop($('.chat-body').get(0).scrollHeight, -1);
+                iosAlert("Your message has been sent", "chatMe: Alert");
             });
         });
+        (function(proxied) {
+            window.alert = function() {
+                iosAlert(arguments[0], arguments[1]);
+            }
+        })(window.alert);
+
+        function iosAlert() {
+            try {
+                var $alert = document.querySelector('.alert');
+                $alert.parentElement.removeChild($alert);
+            } catch ($error) {}
+
+            var $alert = document.createElement('span');
+            $alert.innerHTML = '<div class="alert" id="custom-alert"><div class="inner"><div class="title">' + arguments[1] + '</div><div class="text">' + arguments[0] + '</div></div><div class="button">OK</div></div>';
+            document.querySelector('body').appendChild($alert);
+            myBlurFunction(1);
+            setTimeout(function() {
+                document.querySelector('.alert .button:last-child').addEventListener("click", function() {
+                    myBlurFunction(0);
+                    $alert.parentElement.removeChild($alert);
+                });
+            });
+            return false;
+        }
+
+        var myBlurFunction = function(isBlur) {
+            var containerElement = $('.chat-view');
+
+            if (isBlur) {
+                console.log(containerElement);
+                containerElement.addClass('blur');
+            } else {
+                console.log(containerElement)
+                containerElement.removeClass('blur');
+            }
+        };
     </script>
   </body>
 </html>
