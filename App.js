@@ -1,8 +1,8 @@
 /*
 Node + Express Example code for CS160 Summer 2022
-Prepared by Shm Garanganao Almeda 
+Prepared by Shm Garanganao Almeda
 
-Code referenced from: 
+Code referenced from:
 https://www.digitalocean.com/community/tutorials/how-to-create-a-web-server-in-node-js-with-the-http-module"
 https://expressjs.com/en/starter/hello-world.html
 https://codeforgeek.com/render-html-file-expressjs/
@@ -34,7 +34,7 @@ router.get("/", function (req, res) {
     res.sendFile(path.join(__dirname, "/"));
 });
 
-//depending on what url extension the user navigates to, send them the respective html file. 
+//depending on what url extension the user navigates to, send them the respective html file.
 app.get('/a', function (req, res) {
     res.sendFile(publicPath + '/a.html');
 });
@@ -50,12 +50,12 @@ app.get('/d', function (req, res) {
 app.get('/t', function (req, res) {
     res.sendFile(publicPath + '/t.html');
 });
+app.get('/r', function (req, res) {
+    res.sendFile(publicPath + '/t.html');
+});
 
 
-//run this server by entering "node App.js" using your command line. 
+//run this server by entering "node App.js" using your command line.
    app.listen(port, () => {
      console.log(`Server is running on http://${host}:${port}`);
    });
-
-
-

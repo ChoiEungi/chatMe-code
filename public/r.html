@@ -1,0 +1,130 @@
+<!-- Referenced: https://www.w3schools.com/html/html_responsive.asp-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- let's link to our stylesheet (found in public/css/styles.css)-->
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>prototype</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- add jQuery --->
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.8-fix/jquery.nicescroll.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/chat_ui.css" />
+  </head>
+
+  <body>
+    <div class="content snippets bootdey">
+      <div class="row row-broken">
+        <div class="col-sm-9 col-xs-12">
+          <div class="chat-view">
+            <div class="chat-header">
+              <div class="app-name">ChatMe</div>
+              <div class="chat-room-name">James Huang</div>
+            </div>
+            <div
+              class="chat-body chat"
+              style="overflow: hidden; outline: none"
+              tabindex="5001"
+            >
+              <div class="answer left">
+                <div class="avatar">
+                  <img src="./images/james.png" alt="User name" />
+                  <div class="status offline"></div>
+                </div>
+                <div class="name">James Huang</div>
+                <div class="text">
+                  Lorem ipsum dolor amet, consectetur adipisicing elit Lorem
+                  ipsum dolor amet, consectetur adipisicing elit Lorem ipsum
+                  dolor amet, consectetur adiping elit
+                </div>
+                <div class="time">5 min ago</div>
+              </div>
+              <div class="answer right">
+                <div class="text">
+                  Lorem ipsum dolor amet, consectetur adipisicing elit Lorem
+                  ipsum dolor amet, consectetur adipisicing elit Lorem ipsum
+                  dolor amet, consectetur adiping elit
+                </div>
+                <div class="time">5 min ago</div>
+              </div>
+              <div class="answer left">
+                <div class="avatar">
+                  <img src="./images/james.png" alt="User name" />
+                  <div class="status offline"></div>
+                </div>
+                <div class="name">James Huang</div>
+                <div class="text">
+                  Lorem ipsum dolor amet, consectetur adipisicing elit Lorem
+                  ipsum dolor amet, consectetur adipisicing elit Lorem ipsum
+                  dolor amet, consectetur adiping elit
+                </div>
+                <div class="time">5 min ago</div>
+              </div>
+              <div class="answer left">
+                <div class="avatar">
+                  <img src="./images/james.png" alt="User name" />
+                  <div class="status offline"></div>
+                </div>
+                <div class="name">James Huang</div>
+                <div class="text">
+                  Lorem ipsum dolor amet, consectetur adipisicing elit Lorem
+                  ipsum dolor amet, consectetur adipisicing elit Lorem ipsum
+                  dolor amet, consectetur adiping elit
+                </div>
+                <div class="time">5 min ago</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="chat-send text-muted d-flex justify-content-start align-items-center p-3"
+        >
+          <input
+            type="text"
+            class="form-control form-control-lg"
+            id="chatsend"
+            placeholder="Type message"
+          />
+          <a class="ms-3 send-button"><i class="fa fa-paper-plane p-3"></i></a>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            $(".chat").niceScroll();
+
+            $(".send-button").on("click", function () {
+                $(".chat-body").append(
+                    `<div class="answer right">
+                <div class="text">
+                  ${$("input#chatsend").val()}
+                </div>
+                <div class="time">5 min ago</div>
+              </div>`
+                );
+                document.getElementById("chatsend").value = "";
+                $('.chat-body').scrollTop($('.chat-body').get(0).scrollHeight, -1);
+            });
+        });
+    </script>
+  </body>
+</html>
