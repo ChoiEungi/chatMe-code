@@ -80,9 +80,9 @@ body {
 }
 
 .rest_c {
-  float: center;
+  float: left;
   width: 100%;
-  margin-top: 1px;
+  /*margin-top: 1px;*/
   height: 30px;
   background-color: yellow;
 }

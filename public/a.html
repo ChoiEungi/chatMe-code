@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- let's link to our stylesheet (found in public/css/styles.css)-->
 <link rel="stylesheet" type="text/css" href="/css/styles.css">
+
 </head>
 
 <!-- you can also specify styles straight in html!-->
@@ -63,7 +64,7 @@
     </div>
 
     <div class="rest">
-      <h3>What's up</h3
+      <h3>What's up</h3>
     </div>
     <div class="rest_t">
       <t>California time</t>
@@ -73,26 +74,23 @@
   </div>
 
 
-  <div class="buttons">
-    <a id="1" href="/b">
-      <button class="button1"></button>
-      <span class="img1">
-        <img src="/images/friends.png" height="40px" width="40px">
-      </span>
-      <div class="txtfr">
-        Friends
-      </div>
-    </a>
-    <a id="2" href="/a">
-      <button class="button2"></button>
-      <span class="img2">
-        <img src="/images/profile.png" height="40px" width="40px">
-      </span>
-      <div class="txtpr">
-        Profile
-      </div>
-    </a>
-  </div>
+<div >
+  <script src="https://cdn.tailwindcss.com"></script>
+  <section id="bottom-navigation" class="block fixed inset-x-0 bottom-0 z-10 bg-white shadow">
+    <div id="tabs" class="flex justify-between">
+      <a href="/b"
+         class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
+        <img width="25" height="25" class="inline-block mb-1" src="images/friends.png"/>
+        <span class="tab tab-home block text-xs">Friends</span>
+      </a>
+      <a href="/a"
+         class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
+        <img width="25" height="25" class="inline-block mb-1" src="images/profile.png"/>
+        <span class="tab tab-kategori block text-xs">profile</span>
+      </a>
+    </div>
+  </section>
+</div>
 
 
 <style>
