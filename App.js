@@ -39,7 +39,7 @@ app.get('/a', function (req, res) {
     res.sendFile(publicPath + '/a.html');
 });
 app.get('/b', function (req, res) {
-    res.sendFile(publicPath + '/b.html');
+    res.sendFile(publicPath + '/b-fix.html');
 });
 app.get('/c', function (req, res) {
     res.sendFile(publicPath + '/c.html');
@@ -52,6 +52,10 @@ app.get('/t', function (req, res) {
 });
 app.get('/r', function (req, res) {
     res.sendFile(publicPath + '/r.html');
+});
+
+app.get('/b2', function (req, res) {
+    res.sendFile(publicPath + '/b-fix.html');
 });
 
 

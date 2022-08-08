@@ -2,9 +2,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- let's link to our stylesheet (found in public/css/styles.css)-->
-<link rel="stylesheet" type="text/css" href="/css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- let's link to our stylesheet (found in public/css/styles.css)-->
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
 
 </head>
 
@@ -14,101 +14,101 @@
 <div style="font-family:'Comic Sans MS', 'Comic Sans', cursive; color:#0000aa;" >
   <div class="app-topbar">
     <div
-    onclick="location.href='http://localhost:8000/';"
-  >
-    <i class="fa fa-arrow-left" style="font-size: 25px"></i>
-  </div>
+            onclick="location.href='http://localhost:8000/';"
+    >
+      <i class="fa fa-arrow-left" style="font-size: 25px"></i>
+    </div>
   </div>
 </div>
 
 <div>
-    <h1 style="font-family:verdana;"><b>My Profile</b></h1>
-    <br>
-    <div class="pic">
-      <img style="border:1px solid black; border-radius: 8px; position: relative; left: 5%;" src="/images/img.png" alt="Photo of Milford Sound in New Zealand" height="100px" width="100/>px">
-    </div>
-    <div class="txt">
-      change a photo
-    </div>
-    <div class="txt1">
-      Name
-    </div>
-    <div class="txt2">
-      Amy Wang
-    </div>
-    <div class="txt3">
-      Gender
-    </div>
-    <div class="txt4">
-      Female
-    </div>
-
-    <div class="profile-detail-container">
-
-      <div class="txt5">
-        <b>Details</b>
-      </div>
-
-      <div class="profile-detail-component">
-        <div class="profile-detail-subject">
-          App name ID
-        </div>
-        <div class="profile-detail-contents">
-          Aaaaaamy
-        </div>
-        <div class="profile-detail-line"></div>
-      </div>
-
-      <div class="profile-detail-component">
-        <div class="profile-detail-subject">
-          Timezone
-        </div>
-        <div class="profile-detail-contents">
-          PDT
-        </div>
-        <div class="profile-detail-line"></div>
-      </div>
-
-
-      <div class="profile-detail-component">
-        <div class="profile-detail-subject">
-          Current Time
-        </div>
-        <div class="profile-detail-contents">
-          20:19 PM
-        </div>
-        <div class="profile-detail-line"></div>
-      </div>
-
-      <div class="profile-detail-component">
-        <div class="profile-detail-subject">
-          What's up
-        </div>
-        <div class="profile-detail-contents">
-          California time
-        </div>
-        <div class="profile-detail-line"></div>
-      </div>
-
-    </div>
+  <h1 class="text-2xl font-bold p-5"  style="font-family:verdana;"><b>My Profile</b></h1>
+  <br>
+  <div class="pic">
+    <img style="border:1px solid black; border-radius: 8px; position: relative; left: 5%;" src="/images/img.png" alt="Photo of Milford Sound in New Zealand" height="100px" width="100/>px">
   </div>
-  <div style="height: 100px"></div>
-  <div >
-    <section id="bottom-navigation" class="block fixed inset-x-0 bottom-0 z-10 bg-white shadow">
-      <div id="tabs" class="flex justify-between">
-        <a href="/b"
-           class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
-          <img width="25" height="25" class="inline-block mb-1" src="images/friends.png"/>
-          <span class="tab tab-home block text-xs">Friends</span>
-        </a>
-        <a href="/a"
-           class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
-          <img width="25" height="25" class="inline-block mb-1" src="images/profile.png"/>
-          <span class="tab tab-kategori block text-xs">profile</span>
-        </a>
-      </div>
-    </section>
+  <div class="txt">
+    change a photo
   </div>
+  <div class="txt1">
+    Name
+  </div>
+  <div class="txt2">
+    Amy Wang
+  </div>
+  <div class="txt3">
+    Gender
+  </div>
+  <div class="txt4">
+    Female
+  </div>
+
+  <div class="profile-detail-container">
+
+    <div class="txt5">
+      <b>Details</b>
+    </div>
+
+    <div class="profile-detail-component">
+      <div class="profile-detail-subject">
+        App name ID
+      </div>
+      <div class="profile-detail-contents">
+        Aaaaaamy
+      </div>
+      <div class="profile-detail-line"></div>
+    </div>
+
+    <div class="profile-detail-component">
+      <div class="profile-detail-subject">
+        Timezone
+      </div>
+      <div class="profile-detail-contents">
+        PDT
+      </div>
+      <div class="profile-detail-line"></div>
+    </div>
+
+
+    <div class="profile-detail-component">
+      <div class="profile-detail-subject">
+        Current Time
+      </div>
+      <div class="profile-detail-contents">
+        20:19 PM
+      </div>
+      <div class="profile-detail-line"></div>
+    </div>
+
+    <div class="profile-detail-component">
+      <div class="profile-detail-subject">
+        What's up
+      </div>
+      <div class="profile-detail-contents">
+        California time
+      </div>
+      <div class="profile-detail-line"></div>
+    </div>
+
+  </div>
+</div>
+<div style="height: 100px"></div>
+<div >
+  <section  class="block fixed inset-x-0 bottom-0 z-10 bg-white shadow">
+    <div class="flex justify-between">
+      <a href="/b"
+         class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
+        <img width="25" height="25" class="inline-block mb-1" src="images/friends.png"/>
+        <span class="tab tab-home block text-xs">Friends</span>
+      </a>
+      <a href="/a"
+         class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
+        <img width="25" height="25" class="inline-block mb-1" src="images/profile.png"/>
+        <span class="tab tab-kategori block text-xs">profile</span>
+      </a>
+    </div>
+  </section>
+</div>
 
 
 
@@ -136,248 +136,248 @@
 
 
 <style>
-.profile-detail-component{
-  display: flex;
-  flex-direction:column;
-  margin-left: 5%;
+    .profile-detail-component{
+        display: flex;
+        flex-direction:column;
+        margin-left: 5%;
 
-}
+    }
 
- .profile-detail-subject{
-  color: black;
-  font-size: 15px;
-  font-weight: bold;
-  margin-top: 5%;
-  margin-bottom: 3%;
- }
+    .profile-detail-subject{
+        color: black;
+        font-size: 15px;
+        font-weight: bold;
+        margin-top: 5%;
+        margin-bottom: 3%;
+    }
 
-.profile-detail-contents{
-  color: black;
-  font-size: 13px;
-  margin-bottom: 2%;
-}
+    .profile-detail-contents{
+        color: black;
+        font-size: 13px;
+        margin-bottom: 2%;
+    }
 
-.profile-detail-line{
-  border-bottom: 1px solid black;
-  margin-top: 5px;
-  width: 90%;
-}
+    .profile-detail-line{
+        border-bottom: 1px solid black;
+        margin-top: 5px;
+        width: 90%;
+    }
 
-.profile-detail-container{
-  margin-bottom: 10%;
-}
+    .profile-detail-container{
+        margin-bottom: 10%;
+    }
 
-.app-topbar{
-  padding: 1em;
-}
+    .app-topbar{
+        padding: 1em;
+    }
 
-.back{
-  color: black;
-  font-size: 15px;
-  font-weight: bold;
-  position: absolute;
-  left: 2%;
-  top: 0.3%;
-}
-.txt{
-  color: blue;
-  font-size: 10px;
-  position: relative;
-  left: 7%;
-}
-.txt1{
-  color: black;
-  font-size: 15px;
-  font-weight: bold;
-  position: absolute;
-  left: 50%;
-  top: 15%;
-}
+    .back{
+        color: black;
+        font-size: 15px;
+        font-weight: bold;
+        position: absolute;
+        left: 2%;
+        top: 0.3%;
+    }
+    .txt{
+        color: blue;
+        font-size: 10px;
+        position: relative;
+        left: 7%;
+    }
+    .txt1{
+        color: black;
+        font-size: 15px;
+        font-weight: bold;
+        position: absolute;
+        left: 50%;
+        top: 15%;
+    }
 
-.txt2{
-  color: black;
-  font-size: 13px;
-  position: absolute;
-  left: 50%;
-  top: 17%;
-}
-.txt3{
-  color: black;
-  font-size: 15px;
-  font-weight: bold;
-  position: absolute;
-  left: 50%;
-  top: 20%;
-}
-.txt4{
-  color: black;
-  font-size: 13px;
-  position: absolute;
-  left: 50%;
-  top: 22%;
-}
+    .txt2{
+        color: black;
+        font-size: 13px;
+        position: absolute;
+        left: 50%;
+        top: 17%;
+    }
+    .txt3{
+        color: black;
+        font-size: 15px;
+        font-weight: bold;
+        position: absolute;
+        left: 50%;
+        top: 20%;
+    }
+    .txt4{
+        color: black;
+        font-size: 13px;
+        position: absolute;
+        left: 50%;
+        top: 22%;
+    }
 
-.txt5{
-  color: #00003B;
-  font-size: 15px;
-  position: relative;
-  margin-top: 5%;
-  left: 5%;
-}
+    .txt5{
+        color: #00003B;
+        font-size: 15px;
+        position: relative;
+        margin-top: 5%;
+        left: 5%;
+    }
 
-.txt6{
-  color: black;
-  font-size: 15px;
-  font-weight: bold;
-  position: absolute;
-  left: 5%;
-  top: 27%;
-}
-.txt7{
-  color: black;
-  font-size: 13px;
-  position: absolute;
-  left: 5%;
-  top: 30%;
-}
-  .line1{
-    border-bottom: 1px solid black;
-    margin-top: 5px;
-    width: 90%;
-    position: absolute;
-    left: 5%;
-    top: 32%;
-  }
-  .txt8{
-    color: black;
-    font-size: 15px;
-    font-weight: bold;
-    position: absolute;
-    left: 5%;
-    top: 35%;
-  }
-  .txt9{
-    color: black;
-    font-size: 13px;
-    position: absolute;
-    left: 5%;
-    top: 38%;
-  }
-  .line2{
-    border-bottom: 1px solid black;
-    margin-top: 5px;
-    width: 90%;
-    position: absolute;
-    left: 5%;
-    top: 40%;
-  }
-  .txt10{
-    color: black;
-    font-size: 15px;
-    font-weight: bold;
-    position: absolute;
-    left: 5%;
-    top: 43%;
-  }
-  .txt11{
-    color: black;
-    font-size: 13px;
-    position: absolute;
-    left: 5%;
-    top: 46%;
-  }
-  .line3{
-    border-bottom: 1px solid black;
-    margin-top: 5px;
-    width: 90%;
-    position: absolute;
-    left: 5%;
-    top: 48%;
-  }
-  .txt12{
-    color: black;
-    font-size: 15px;
-    font-weight: bold;
-    position: absolute;
-    left: 5%;
-    top: 51%;
-  }
-  .txt13{
-    color: black;
-    font-size: 13px;
-    position: absolute;
-    left: 5%;
-    top: 54%;
-  }
-  .line4{
-    border-bottom: 1px solid black;
-    margin-top: 5px;
-    width: 90%;
-    position: absolute;
-    left: 5%;
-    top: 56%;
-  }
-  .message_button{
-    width:80%;
-    background-color: #007AFF;
-    border-radius: 30rem;
-    padding: 1em;
-    margin: auto;
-    left:10%;
-    text-align: center;
-  }
-  .message_button:hover{
-    width:80%;
-    background-color: #0156b0;
-    border-radius: 30rem;
-    padding: 1em;
-    left:10%;
-  }
-  .txt14{
-    color:white;
-  }
-  .button1{
-    height:60px;
-    width:187px;
-    position: absolute;
-    left: 5%;
-    top: 93%;
-  }
-  .button2{
-    height:60px;
-    width:187px;
-    position: absolute;
-    left: 50%;
-    top: 93%;
-  }
-  .img1{
-    height: 40px;
-    width: 40px;
-    position: absolute;
-    left: 24%;
-    top: 93%;
-  }
-  .txtfr{
-    color: black;
-    font-size: 13px;
-    position: absolute;
-    left: 23%;
-    top: 97%;
-  }
-  .img2{
-    height: 40px;
-    width: 40px;
-    position: absolute;
-    left: 66%;
-    top: 93.5%;
-  }
-  .txtpr{
-    color: black;
-    font-size: 13px;
-    position: absolute;
-    left: 66%;
-    top: 97%;
-  }
+    .txt6{
+        color: black;
+        font-size: 15px;
+        font-weight: bold;
+        position: absolute;
+        left: 5%;
+        top: 27%;
+    }
+    .txt7{
+        color: black;
+        font-size: 13px;
+        position: absolute;
+        left: 5%;
+        top: 30%;
+    }
+    .line1{
+        border-bottom: 1px solid black;
+        margin-top: 5px;
+        width: 90%;
+        position: absolute;
+        left: 5%;
+        top: 32%;
+    }
+    .txt8{
+        color: black;
+        font-size: 15px;
+        font-weight: bold;
+        position: absolute;
+        left: 5%;
+        top: 35%;
+    }
+    .txt9{
+        color: black;
+        font-size: 13px;
+        position: absolute;
+        left: 5%;
+        top: 38%;
+    }
+    .line2{
+        border-bottom: 1px solid black;
+        margin-top: 5px;
+        width: 90%;
+        position: absolute;
+        left: 5%;
+        top: 40%;
+    }
+    .txt10{
+        color: black;
+        font-size: 15px;
+        font-weight: bold;
+        position: absolute;
+        left: 5%;
+        top: 43%;
+    }
+    .txt11{
+        color: black;
+        font-size: 13px;
+        position: absolute;
+        left: 5%;
+        top: 46%;
+    }
+    .line3{
+        border-bottom: 1px solid black;
+        margin-top: 5px;
+        width: 90%;
+        position: absolute;
+        left: 5%;
+        top: 48%;
+    }
+    .txt12{
+        color: black;
+        font-size: 15px;
+        font-weight: bold;
+        position: absolute;
+        left: 5%;
+        top: 51%;
+    }
+    .txt13{
+        color: black;
+        font-size: 13px;
+        position: absolute;
+        left: 5%;
+        top: 54%;
+    }
+    .line4{
+        border-bottom: 1px solid black;
+        margin-top: 5px;
+        width: 90%;
+        position: absolute;
+        left: 5%;
+        top: 56%;
+    }
+    .message_button{
+        width:80%;
+        background-color: #007AFF;
+        border-radius: 30rem;
+        padding: 1em;
+        margin: auto;
+        left:10%;
+        text-align: center;
+    }
+    .message_button:hover{
+        width:80%;
+        background-color: #0156b0;
+        border-radius: 30rem;
+        padding: 1em;
+        left:10%;
+    }
+    .txt14{
+        color:white;
+    }
+    .button1{
+        height:60px;
+        width:187px;
+        position: absolute;
+        left: 5%;
+        top: 93%;
+    }
+    .button2{
+        height:60px;
+        width:187px;
+        position: absolute;
+        left: 50%;
+        top: 93%;
+    }
+    .img1{
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        left: 24%;
+        top: 93%;
+    }
+    .txtfr{
+        color: black;
+        font-size: 13px;
+        position: absolute;
+        left: 23%;
+        top: 97%;
+    }
+    .img2{
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        left: 66%;
+        top: 93.5%;
+    }
+    .txtpr{
+        color: black;
+        font-size: 13px;
+        position: absolute;
+        left: 66%;
+        top: 97%;
+    }
 
 </style>
 
