@@ -55,24 +55,6 @@ body {
   text-align: center;
 }
 
-.blank {
-  float:left;
-  width 100%;
-  padding: 15px;
-  margin-top: 5px;
-  text-align: left;
-}
-
-.rest {
-  float:left;
-  width 100%;
-  padding: 15px;
-  margin-top: 1px;
-  text-align: left;
-}
-
-
-
 @media only screen and (max-width: 620px) {
   /* For mobile phones: */
   .menu,
