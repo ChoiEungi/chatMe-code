@@ -55,6 +55,66 @@ body {
   text-align: center;
 }
 
+.blank {
+  float: left;
+  width: 100%;
+  margin-top: 3px;
+  text-align: left;
+  height: 60px;
+}
+
+.rest {
+  float: left;
+  width: 100%;
+  margin-top: 3px;
+  text-align: left;
+  height: 40px;
+}
+
+.rest_t {
+  float: left;
+  width: 100%;
+  margin-top: 1px;
+  text-align: left;
+  height: 30px;
+}
+
+.rest_c {
+  float: center;
+  width: 100%;
+  margin-top: 1px;
+  height: 30px;
+  background-color: yellow;
+}
+
+.blank_left {
+  float: left;
+  width: 50%;
+  margin-top: 3px;
+  text-align: left;
+  height: 120px;
+  /* background-color: yellow; */
+}
+
+.rest_left {
+  float: right;
+  width: 50%;
+  margin-top: 3px;
+  text-align: left;
+  height: 40px;
+  /* background-color: red; */
+}
+
+.rest_t_left {
+  float: right;
+  width: 50%;
+  margin-top: 3px;
+  text-align: left;
+  height: 30px;
+  /* background-color: blue; */
+}
+
+
 @media only screen and (max-width: 620px) {
   /* For mobile phones: */
   .menu,
