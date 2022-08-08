@@ -38,53 +38,55 @@
     <div class="txt4">
       Male
     </div>
-    <div class="txt5">
-      Details
+
+    <div class="profile-detail-container">
+
+      <div class="txt5">
+        Details
+      </div>
+
+      <div class="profile-detail-component">
+        <div class="profile-detail-subject">
+          App name ID
+        </div>
+        <div class="profile-detail-contents">
+          Jaaaaames
+        </div>
+        <div class="profile-detail-line"></div>
+      </div>
+  
+      <div class="profile-detail-component">
+        <div class="profile-detail-subject">
+          Timezone
+        </div>
+        <div class="profile-detail-contents">
+          KST
+        </div>
+        <div class="profile-detail-line"></div>
+      </div>
+  
+  
+      <div class="profile-detail-component">
+        <div class="profile-detail-subject">
+          Current Time
+        </div>
+        <div class="profile-detail-contents">
+          8:19 PM
+        </div>
+        <div class="profile-detail-line"></div>
+      </div>
+  
+      <div class="profile-detail-component">
+        <div class="profile-detail-subject">
+          What's up
+        </div>
+        <div class="profile-detail-contents">
+          California time
+        </div>
+        <div class="profile-detail-line"></div>
+      </div>
+  
     </div>
-
-
-    <div class="profile-detail-component">
-      <div class="profile-detail-subject">
-        App name ID
-      </div>
-      <div class="profile-detail-contents">
-        Jaaaaames
-      </div>
-      <div class="profile-detail-line"></div>
-    </div>
-
-    <div class="profile-detail-component">
-      <div class="profile-detail-subject">
-        Timezone
-      </div>
-      <div class="profile-detail-contents">
-        KST
-      </div>
-      <div class="profile-detail-line"></div>
-    </div>
-
-
-    <div class="profile-detail-component">
-      <div class="profile-detail-subject">
-        Current Time
-      </div>
-      <div class="profile-detail-contents">
-        8:19 PM
-      </div>
-      <div class="profile-detail-line"></div>
-    </div>
-
-    <div class="profile-detail-component">
-      <div class="profile-detail-subject">
-        What's up
-      </div>
-      <div class="profile-detail-contents">
-        California time
-      </div>
-      <div class="profile-detail-line"></div>
-    </div>
-
-
 
   </div>
 
@@ -127,28 +129,34 @@
 .profile-detail-component{
   display: flex;
   flex-direction:column;  
+  margin-left: 5%;
 
 }
-
 
  .profile-detail-subject{
   color: black;
   font-size: 15px;
   font-weight: bold;
+  margin-top: 5%;
+  margin-bottom: 3%;
  }
 
 .profile-detail-contents{
   color: black;
   font-size: 13px;
+  margin-bottom: 2%;
 }
 
 .profile-detail-line{
   border-bottom: 1px solid black;
-    margin-top: 5px;
-    width: 90%;
+  margin-top: 5px;
+  width: 90%;
+}
+
+.profile-detail-container{
+  margin-bottom: 10%;
 }
       
-
 .app-topbar{
   padding: 1em;
 }
@@ -173,7 +181,7 @@
   font-weight: bold;
   position: absolute;
   left: 50%;
-  top: 10%;
+  top: 15%;
 }
 
 .txt2{
@@ -181,7 +189,7 @@
   font-size: 13px;
   position: absolute;
   left: 50%;
-  top: 12%;
+  top: 17%;
 }
 .txt3{
   color: black;
@@ -189,20 +197,21 @@
   font-weight: bold;
   position: absolute;
   left: 50%;
-  top: 15%;
+  top: 20%;
 }
 .txt4{
   color: black;
   font-size: 13px;
   position: absolute;
   left: 50%;
-  top: 17%;
+  top: 22%;
 }
 
 .txt5{
   color: #00003B;
   font-size: 15px;
   position: relative;
+  margin-top: 5%;
   left: 5%; 
 }
 
@@ -303,7 +312,9 @@
     background-color: #007AFF;
     border-radius: 30rem;
     padding: 1em;
+    margin: auto;
     left:10%;
+    text-align: center; 
   }
   .message_button:hover{
     width:80%;
